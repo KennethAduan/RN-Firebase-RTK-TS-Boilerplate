@@ -24,7 +24,7 @@ This is a boilerplate project for kickstarting a React Native app with Firebase 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/rn-firebase-rtk-ts-boilerplate.git
+   git clone https://github.com/KennethAduan/RN-Firebase-RTK-TS-Boilerplate.git
    cd rn-firebase-rtk-ts-boilerplate
 2. Install dependencies:
     npm install
