@@ -1,10 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import store from "@/utils/redux/store";
-import { Provider } from "react-redux";
-import Home from "@/screens/Home/Home";
-import { useState, useEffect } from "react";
 import * as SplashScreen from "expo-splash-screen";
+import { useState, useEffect } from "react";
+import { View } from "react-native";
+
+import "react-native-gesture-handler";
+import Providers from "@/services/providers";
 // keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
 export default function App() {
@@ -26,19 +25,8 @@ export default function App() {
   if (!isReady) return null;
 
   return (
-    <Provider store={store}>
-      <View style={styles.container}>
-        <Home />
-      </View>
-    </Provider>
+    <View style={{ flex: 1 }}>
+      <Providers />
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
