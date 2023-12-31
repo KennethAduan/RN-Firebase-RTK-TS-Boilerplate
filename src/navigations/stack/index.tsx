@@ -6,8 +6,7 @@ interface Props {
   isFirstLaunch: boolean;
 }
 
-const StackNavigator = (isFirstLaunch: Props) => {
-  console.log("StackNavigator");
+const StackNavigator = ({ isFirstLaunch }: Props) => {
   return (
     <Stack.Navigator
       initialRouteName={isFirstLaunch ? "onBoardingScreen" : "Home"}
