@@ -1,9 +1,9 @@
 import * as SplashScreen from "expo-splash-screen";
 import { useState, useEffect } from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
 import "react-native-gesture-handler";
-import Providers from "@/services/providers";
+// import Providers from "@/services/providers";
 // keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
 export default function App() {
@@ -26,7 +26,8 @@ export default function App() {
 
   return (
     <View style={{ flex: 1 }}>
-      <Providers />
+      <Text>Welcome to React</Text>
+      {/* <Providers /> */}
     </View>
   );
 }
